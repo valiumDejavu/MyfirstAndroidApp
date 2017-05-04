@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.bayes.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp"><![CDATA[
+
+
+    android:padding="16dp"
+        android:text="Prior probability of something happens , eg: 30"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+
+    ]]>
+
+    <TextView
+        android:id="@+id/mResult"
+        android:layout_width="209dp"
+        android:layout_height="64dp"
+        android:layout_alignEnd="@+id/mZ"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_x="98dp"
+        android:layout_y="431dp"
+        android:padding="16dp"
+        android:text="Result"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="431dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="346dp"
+        android:layout_height="51dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/mResult"
+        android:layout_marginTop="42dp"
+        android:layout_x="26dp"
+        android:layout_y="374dp"
+        android:padding="16dp"
+        android:text="The probability of something happens after event A occurs"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="369dp" />
+
+    <EditText
+        android:id="@+id/mY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/mX"
+        android:layout_centerVertical="true"
+        android:layout_x="81dp"
+        android:layout_y="109dp"
+        android:ems="10"
+        android:inputType="number"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="137dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="350dp"
+        android:layout_height="26dp"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="81dp"
+        android:layout_x="21dp"
+        android:layout_y="156dp"
+        android:text="probability of event A occurs if something not happens"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/mZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/mY"
+        android:layout_below="@+id/mY"
+        android:layout_x="89dp"
+        android:layout_y="185dp"
+        android:ems="10"
+        android:inputType="number"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="234dp" />
+
+    <Button
+        android:id="@+id/btnCaculate"
+        android:layout_width="259dp"
+        android:layout_height="94dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="108dp"
+        android:layout_x="64dp"
+        android:layout_y="237dp"
+        android:padding="16dp"
+        android:text="Calculate"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="297dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="350dp"
+        android:layout_height="26dp"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="81dp"
+        android:layout_x="22dp"
+        android:layout_y="6dp"
+        android:text="Prior probability of something happens , eg: 30"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/mX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp"
+        android:layout_x="87dp"
+        android:layout_y="24dp"
+        android:ems="10"
+        android:inputType="number"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="350dp"
+        android:layout_height="26dp"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="81dp"
+        android:layout_x="25dp"
+        android:layout_y="80dp"
+        android:text="probability of event A occurs if something happens"
+        android:textSize="14sp" />
+
+</AbsoluteLayout>
